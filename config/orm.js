@@ -12,11 +12,11 @@ var printQMarks = (number) =>{
 };
 
 // converts obj values to SQL notation
-var objToSQL = (obj) =>{
+var objToSQL = (ob) =>{
     var arr = [];
     for (var key in ob){
-        var value = obj[key];
-        if (Object.hasOwnProperty.call(ob.key)){
+        var value = ob[key];
+        if (Object.hasOwnProperty.call(ob,key)){
             if (typeof value === 'string' && value.indexOf(" ")>=0){
                 value = "'" + value + "'";
             }
@@ -30,7 +30,7 @@ const orm = {
 
     //select all eaten burgers 
     selectAll: function (tableInput,cb) {
-        var queryString = `select * from ${burgers} where eaten=1;`
+        var queryString = `select * from ${tableInput};`;
         connection.query(queryString, function(err,result){
             if(err){
                 throw err;
@@ -46,6 +46,7 @@ const orm = {
         queryString += ')';
         queryString += 'values (';
         queryString += printQMarks(vals.length);
+        queryString += ') ';
 
         console.log(queryString);
 

@@ -1,4 +1,3 @@
-import { ENGINE_METHOD_NONE } from 'constants';
 
 const mysql = require('mysql');
 
