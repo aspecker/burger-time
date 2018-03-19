@@ -1,0 +1,25 @@
+body{
+    background-image: url('../images/light-veneer.png');
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+}
+input{
+    width: 25%;
+}
+h1{
+    color: #ff3d00;
+}
+h2{
+    color: #ff5722
+}
+.burgerText{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2em;
+    line-height: 1.6;
+}
+button{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.submitBtn{
+    font-size: 3em;
+}
