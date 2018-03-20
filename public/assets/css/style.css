@@ -3,8 +3,8 @@ body{
     text-align: center;
     font-family: 'Bungee Shade', cursive;
 }
-input{
-    width: 25%;
+#burgName{
+    width: 15%;
 }
 h1{
     color: #ff3d00;
@@ -16,10 +16,15 @@ h2{
     font-family: 'Nanum Myeongjo', serif;
     font-size: 2em;
     line-height: 1.6;
+    color: #00695c;
 }
 button{
     font-family: 'Nanum Myeongjo', serif;
+    border-radius: 30%;
 }
 .submitBtn{
     font-size: 3em;
+}
+.eat-burger{
+    margin: 5px 5px 5px 5px;
 }
